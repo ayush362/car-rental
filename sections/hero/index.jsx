@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Hero = () => {
-  return <div>hero sections</div>;
+  return <div className="bg-yellow-500">hero sections</div>;
 };
