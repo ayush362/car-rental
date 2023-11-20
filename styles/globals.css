@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+  @apply py-3 px-4 bg-orange-600 rounded text-white border-b-2 border-r-2 border-transparent;
+}
+
+.btn:hover {
+  @apply border-black shadow-xl;
+}
+
+.btn-black {
+  @apply py-3 px-4 bg-black rounded text-white border-2 border-transparent;
+}
+
+.btn-black:hover {
+  @apply border-black bg-white text-black transition-transform;
+}
