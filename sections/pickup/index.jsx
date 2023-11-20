@@ -4,9 +4,9 @@ export const Pickup = () => {
   return (
     <section className="mt-32">
       <div className="container mx-auto p-10 flex flex-col gap-5 shadow-2xl">
-        <h3 className="font-bold text-xl">Book a Car</h3>
-        <div className="flex justify-between gap-5 ">
-          <div className="flex flex-col w-1/3 gap-2">
+        <h3 className="font-bold text-xl text-center">Book a Car</h3>
+        <div className="flex flex-col lg:flex-row items-center lg:items-start  justify-between  gap-5 ">
+          <div className="flex flex-col w-full lg:w-1/3 gap-2">
             <label>
               Select your Car Type<sup className="text-red-500">*</sup>
             </label>
@@ -18,7 +18,7 @@ export const Pickup = () => {
               <option value="volvo">Volvo</option>
             </select>
           </div>
-          <div className="flex flex-col w-1/3 gap-2">
+          <div className="flex flex-col  w-full lg:w-1/3  gap-2">
             <label className="flex items-center">
               {location}
               Pick-Up<sup className="text-red-500">*</sup>
@@ -31,7 +31,7 @@ export const Pickup = () => {
               <option value="Koramangala">Koramangala</option>
             </select>
           </div>
-          <div className="flex flex-col w-1/3 gap-2">
+          <div className="flex flex-col w-full lg:w-1/3  gap-2">
             <label className="flex items-center">
               {location} Drop-of<sup className="text-red-500">*</sup>
             </label>
@@ -44,8 +44,8 @@ export const Pickup = () => {
             </select>
           </div>
         </div>
-        <div className="flex justify-between gap-5">
-          <div className="w-1/3">
+        <div className="flex justify-between gap-5 flex-col lg:flex-row items-center lg:items-start ">
+          <div className=" w-full lg:w-1/3 ">
             <label className="flex items-center gap-2">
               {calender} Pick-Up<sup className="text-red-500">*</sup>
             </label>
@@ -54,7 +54,7 @@ export const Pickup = () => {
               className="w-full mt-2 border-2 border-gray-400"
             />
           </div>
-          <div className="w-1/3">
+          <div className=" w-full lg:w-1/3 ">
             <label className="flex items-center gap-2">
               {calender} Drop-of<sup className="text-red-500">*</sup>
             </label>
@@ -63,7 +63,7 @@ export const Pickup = () => {
               className="w-full mt-2 border-2 border-gray-400"
             />
           </div>
-          <div className="w-1/3">
+          <div className=" w-full lg:w-1/3 ">
             <button className="btn w-full mt-3">Search</button>
           </div>
         </div>

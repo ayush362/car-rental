@@ -25,7 +25,7 @@ export const Plan = () => {
         <h4 className="font-bold text-xl">Plan your trip now</h4>
         <h3 className="font-bold text-3xl">Quick & easy Car rental</h3>
       </div>
-      <div className="flex justify-between mt-10">
+      <div className="flex flex-col gap-5 lg:flex-row justify-between mt-10">
         {planItems.map((planItems, index) => (
           <TripPlanProcess key={index} {...planItems} />
         ))}
