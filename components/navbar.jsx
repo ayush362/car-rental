@@ -39,17 +39,18 @@ export const Navbar = () => {
             <img
               src="/menu.svg"
               alt="menu"
-              className={`${!isSelected ? "rotate-90" : ""}`}
+              className={`${!isSelected ? "hidden" : ""}`}
             />
+            <span className={`${isSelected ? "hidden" : ""}`}>{x}</span>
           </button>
         </div>
       </div>
       <div
-        className={`bg-white flex flex-col absolute top-0 right-0 h-full ${
+        className={`bg-white flex flex-col absolute top-0 right-0 w-full h-full ${
           isSelected ? "hidden" : ""
         }`}
       >
-        <ul className="flex gap-4 flex-col items-center justify-center h-2/3">
+        <ul className="flex gap-4 flex-col items-center justify-center h-2/3 text-2xl font-bold">
           <li className="hover:text-orange-600">
             <a href="/">Home</a>
           </li>
@@ -73,3 +74,20 @@ export const Navbar = () => {
     </navbar>
   );
 };
+
+const x = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.5}
+    stroke="currentColor"
+    className="w-10 h-10"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M6 18L18 6M6 6l12 12"
+    />
+  </svg>
+);

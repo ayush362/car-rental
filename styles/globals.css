@@ -17,3 +17,15 @@
 .btn-black:hover {
   @apply border-black bg-white text-black transition-transform;
 }
+
+.btn-gray {
+  @apply py-3 px-4 bg-gray-200 border-2 border-transparent;
+}
+
+.btn-gray:hover {
+  @apply bg-orange-600 text-white;
+}
+
+.mbg {
+  background-color: #f8f8f8;
+}
