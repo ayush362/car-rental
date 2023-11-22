@@ -4,9 +4,13 @@ export const Navbar = () => {
   const [isSelected, setSelected] = useState(false);
   return (
     <navbar>
-      <div className="container mx-auto flex justify-between items-center p-2 mt-5 relative">
+      <div className="container mx-auto flex justify-between items-center p-2  relative">
         <div className="px-2">
-          <img src="/logo.png" alt="logo" className="w-40" />
+          <button>
+            <a href="/">
+              <img src="/logo.png" alt="logo" className="w-40" />
+            </a>
+          </button>
         </div>
         <div className="hidden lg:block">
           <ul className="flex gap-5">
@@ -25,9 +29,6 @@ export const Navbar = () => {
             <li className="hover:text-orange-600">
               <a href="/ourTeam">Our Team</a>
             </li>
-            <li className="hover:text-orange-600">
-              <a href="/contact">Contact</a>
-            </li>
           </ul>
         </div>
         <div className="hidden lg:flex gap-5 ">
@@ -39,15 +40,15 @@ export const Navbar = () => {
             <img
               src="/menu.svg"
               alt="menu"
-              className={`${!isSelected ? "hidden" : ""}`}
+              className={`${isSelected ? "hidden" : ""}`}
             />
-            <span className={`${isSelected ? "hidden" : ""}`}>{x}</span>
+            <span className={`${!isSelected ? "hidden" : ""}`}>{x}</span>
           </button>
         </div>
       </div>
       <div
         className={`bg-white flex flex-col absolute top-0 right-0 w-full h-full ${
-          isSelected ? "hidden" : ""
+          !isSelected ? "hidden" : ""
         }`}
       >
         <ul className="flex gap-4 flex-col items-center justify-center h-2/3 text-2xl font-bold">
@@ -65,9 +66,6 @@ export const Navbar = () => {
           </li>
           <li className="hover:text-orange-600">
             <a href="/ourTeam">Our Team</a>
-          </li>
-          <li className="hover:text-orange-600">
-            <a href="/contact">Contact</a>
           </li>
         </ul>
       </div>

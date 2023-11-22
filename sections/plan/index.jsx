@@ -22,8 +22,8 @@ export const Plan = () => {
   return (
     <section className="container mx-auto mt-20">
       <div className="flex flex-col gap-3 items-center justify-center">
-        <h4 className="font-bold text-xl">Plan your trip now</h4>
-        <h3 className="font-bold text-3xl">Quick & easy Car rental</h3>
+        <h4 className="font-bold text-3xl">Plan your trip now</h4>
+        <h3 className="font-bold text-5xl">Quick & easy Car rental</h3>
       </div>
       <div className="flex flex-col gap-5 lg:flex-row justify-between mt-10">
         {planItems.map((planItems, index) => (

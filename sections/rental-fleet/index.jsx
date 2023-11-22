@@ -1,8 +1,82 @@
 import React, { useState } from "react";
 
+export const carRentalDetails = [
+  {
+    title: "audi",
+    model: "Audi",
+    Mark: "A1",
+    Year: 2012,
+    Doors: "4/5",
+    AC: "Yes",
+    Transmission: "Manual",
+    Fuel: "Gasoline",
+    Rent: 45,
+    image: "/audi-a1.jpg",
+  },
+  {
+    title: "VWgolf",
+    model: "Golf 6",
+    Mark: "Vokswagen",
+    Year: 2008,
+    Doors: "4/5",
+    AC: "Yes",
+    Transmission: "Manual",
+    Fuel: "Diesel",
+    Rent: 37,
+    image: "/golf6.jpg",
+  },
+  {
+    title: "toyota",
+    model: "Camry",
+    Mark: "Toyota",
+    Year: 2006,
+    Doors: "4/5",
+    AC: "Yes",
+    Transmission: "Manual",
+    Fuel: "Hbrid",
+    Rent: 30,
+    image: "/toyotacamry.jpg",
+  },
+  {
+    title: "bmw",
+    model: "320",
+    Mark: "BMW",
+    Year: 2012,
+    Doors: "4/5",
+    AC: "Yes",
+    Transmission: "Manual",
+    Fuel: "Diesel",
+    Rent: 35,
+    image: "/bmw320.jpg",
+  },
+  {
+    title: "mercedes",
+    model: "Benz GLK",
+    Mark: "Mercedes",
+    Year: 2006,
+    Doors: "4/5",
+    AC: "Yes",
+    Transmission: "Manual",
+    Fuel: "Diesel",
+    Rent: 50,
+    image: "/benz.jpg",
+  },
+  {
+    title: "VWpassat",
+    model: "Passat CC",
+    Mark: "Vokswagen",
+    Year: 2008,
+    Doors: "4/5",
+    AC: "Yes",
+    Transmission: "Manual",
+    Fuel: "Gasoline",
+    Rent: 25,
+    image: "/passatcc.jpg",
+  },
+];
+
 export const RentalFleet = () => {
   const [isSelected, setSelected] = useState("audi");
-  const [selectedButton, setSelectedButton] = useState(false);
   function imageSelector(props) {
     setSelected(props);
     console.log(isSelected);
