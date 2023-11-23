@@ -139,7 +139,7 @@ export const RentalFleet = () => {
         </div>
         <div className="lg:w-1/3 flex justify-center ">
           <div className="border-1 border-black flex-col lg:w-1/2">
-            <div className="bg-orange-600  flex ju py-6">
+            <div className="bg-orange-600  flex  py-6">
               <p className="flex justify-center items-center w-full text-2xl text-white">
                 <span className="text-4xl font-bold">
                   $ {carRentalDetails[isSelected].Rent}
