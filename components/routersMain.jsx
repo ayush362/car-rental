@@ -8,7 +8,7 @@ export const RoutersMain = ({ sectionName, path }) => {
         <img
           src="/main-bg.png"
           alt="Car image bg"
-          className="w-full absolute opacity-10"
+          className="lg:w-full absolute opacity-10"
         />
       </div>
       <div className="container mx-auto py-5">

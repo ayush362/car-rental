@@ -29,7 +29,7 @@ const ourTeam = () => {
 
 const OurTeamCard = ({ image, name, designation }) => {
   return (
-    <section className="container mx-auto mt-40 flex items-center justify-center">
+    <section className="container mx-auto lg:mt-40 flex items-center justify-center">
       <div className="p-10 shadow-2xl">
         <img src={image} alt={name} className="w-98 h-98" />
         <div className="flex flex-col gap-2 text-center mt-5">

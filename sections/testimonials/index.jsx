@@ -19,7 +19,7 @@ const testimonialData = [
 
 export const Testimonials = () => {
   return (
-    <section className="bg-gray-100 py-20 mt-40">
+    <section className="bg-gray-100 py-20">
       <div className="container mx-auto">
         <div className="flex flex-col gap-3 justify-center items-center">
           <h4 className="font-semibold">Reviewed by People</h4>

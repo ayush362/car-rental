@@ -110,7 +110,7 @@ export const VehicleModelCard = ({
   mark,
 }) => {
   return (
-    <section className="mt-40 flex justify-center items-center border-2 border-black py-20 px-10">
+    <section className="lg:mt-40 flex justify-center items-center border-2 border-black py-20 px-10">
       <div>
         <img src={image} alt={title} className="h-60" />
         <div className="flex flex-col justify-center gap-4 mt-5">

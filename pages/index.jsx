@@ -9,6 +9,7 @@ import { Main } from "../sections/main";
 import { Testimonials } from "../sections/testimonials";
 import { Faq } from "../sections/faq";
 import { Download } from "../sections/download";
+import ScrollToTopButton from "../components/ScrollToTopButton.jsx";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Testimonials />
       <Faq />
       <Download />
+      <ScrollToTopButton />
     </Layout>
   );
 }
