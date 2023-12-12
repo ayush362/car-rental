@@ -18,14 +18,14 @@ const planItems = [
   },
 ];
 
-export const Plan = () => {
+export const PlanSection = () => {
   return (
-    <section className="container mx-auto mt-20">
+    <section className="container px-32 mx-auto my-20">
       <div className="flex flex-col gap-3 items-center justify-center">
         <h4 className="font-bold text-3xl">Plan your trip now</h4>
         <h3 className="font-bold text-5xl">Quick & easy Car rental</h3>
       </div>
-      <div className="flex flex-col gap-5 lg:flex-row justify-between mt-10">
+      <div className="flex flex-col gap-32 lg:flex-row justify-between mt-10">
         {planItems.map((planItems, index) => (
           <TripPlanProcess key={index} {...planItems} />
         ))}
@@ -37,9 +37,9 @@ export const Plan = () => {
 const TripPlanProcess = (props) => {
   return (
     <div className="flex flex-col justify-center gap-4 items-center">
-      <img src={props.image} alt={props.title} className="w-32 h-32" />
+      <img src={props.image} alt={props.title}/>
       <h3 className="font-bold text-xl">{props.title}</h3>
-      <p className="w-1/2 text-gray-500">{props.para}</p>
+      <p className="text-gray-500 text-center">{props.para}</p>
     </div>
   );
 };

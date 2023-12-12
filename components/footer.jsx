@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <section className="container mx-auto py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <section className="container mx-auto py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
       <div className="flex flex-col items-center text-center md:items-start md:text-left gap-4 mt-8">
         <h2 className="text-2xl">
           <span className="font-bold">Car</span> Rental
