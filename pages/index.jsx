@@ -1,8 +1,8 @@
 import Layout from "../components/layout";
 import React from "react";
-import { Hero } from "../sections/hero";
-import { Pickup } from "../sections/pickup";
-import { Plan } from "../sections/plan";
+import { HeroSection } from "../sections/hero";
+import { PickupSection } from "../sections/pickup";
+import { PlanSection } from "../sections/plan";
 import { RentalFleet } from "../sections/rental-fleet";
 import { Advertisement } from "../sections/advertisement";
 import { Main } from "../sections/main";
@@ -14,9 +14,9 @@ import ScrollToTopButton from "../components/ScrollToTopButton.jsx";
 export default function Home() {
   return (
     <Layout>
-      <Hero />
-      <Pickup />
-      <Plan />
+      <HeroSection />
+      <PickupSection />
+      <PlanSection />
       <RentalFleet />
       <Advertisement />
       <Main />

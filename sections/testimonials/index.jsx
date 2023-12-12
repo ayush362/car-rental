@@ -3,7 +3,7 @@ import React from "react";
 const testimonialData = [
   {
     quote:
-      "We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable. ",
+      "We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable.",
     image: "/pfp1.webp",
     name: "Harry potter",
     location: "Belgrade",
@@ -20,7 +20,7 @@ const testimonialData = [
 export const Testimonials = () => {
   return (
     <section className="bg-gray-100 py-20">
-      <div className="container mx-auto">
+      <div className="container px-32 mx-auto">
         <div className="flex flex-col gap-3 justify-center items-center">
           <h4 className="font-semibold">Reviewed by People</h4>
           <h2 className="font-bold text-3xl">Client's Testimonials</h2>
@@ -31,7 +31,7 @@ export const Testimonials = () => {
             experiences with you.
           </p>
         </div>
-        <div className="flex gap-5 flex-col lg:flex-row justify-center items-center mt-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-center items-center mt-4">
           {testimonialData.map((testimonialData, index) => (
             <TestimonialsCard key={index} {...testimonialData} />
           ))}
@@ -43,9 +43,9 @@ export const Testimonials = () => {
 
 const TestimonialsCard = ({ quote, image, name, location }) => {
   return (
-    <div className="bg-white p-10 flex flex-col  w-96 shadow-xl gap-5 justify-center items-center">
+    <div className="bg-white p-10 flex flex-col shadow-xl gap-5 justify-center items-center h-full">
       <p>"{quote}"</p>
-      <div className="flex justify-around w-full">
+      <div className="flex justify-between w-full mt-auto">
         <div className="flex gap-5">
           <img src={image} alt={name} className="rounded-full w-14 h-14" />
           <div className="flex flex-col gap-1">

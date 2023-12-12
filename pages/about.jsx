@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar } from "../components/navbar";
 import { About } from "../sections/about";
-import { Plan } from "../sections/plan";
+import { PlanSection } from "../sections/plan";
 import { Contact } from "../components/contact";
 import { Footer } from "../components/footer";
 import { RoutersMain } from "../components/routersMain";
@@ -11,7 +11,7 @@ const about = () => {
     <section className="text-xl">
       <RoutersMain sectionName="About" path="Home / About" />
       <About />
-      <Plan />
+      <PlanSection />
       <Contact />
       <Footer />
     </section>
